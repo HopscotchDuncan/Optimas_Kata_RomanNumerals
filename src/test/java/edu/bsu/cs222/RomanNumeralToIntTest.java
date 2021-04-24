@@ -25,4 +25,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralIX(){
         Assertions.assertEquals(9,romanNumeralToInt.convertStringToInt("IX"));
     }
+
+    @Test
+    public void testRomanNumeralX(){
+        Assertions.assertEquals(10,romanNumeralToInt.convertStringToInt("X"));
+    }
 }
