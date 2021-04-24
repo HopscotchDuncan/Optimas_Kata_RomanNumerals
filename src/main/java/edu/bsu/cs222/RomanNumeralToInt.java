@@ -11,7 +11,8 @@ public class RomanNumeralToInt {
             case "X" -> 10;
             case "XL" -> 40;
             case "L" -> 50;
-            default -> 90;
+            case "XC" -> 90;
+            default -> 100;
         };
     }
 }
