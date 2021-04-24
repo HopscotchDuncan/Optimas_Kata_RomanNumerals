@@ -78,6 +78,6 @@ public class RomanNumeralToIntTest {
 
     @Test
     public void testRomanNumeralXLI(){
-        Assertions.assertEquals(41,romanNumeralToInt.convertStringToInt("XLI"));
+        Assertions.assertEquals(41,romanNumeralToInt.convertComplexRomanNumeralToInt("XLI"));
     }
 }
