@@ -2,12 +2,11 @@ package edu.bsu.cs222;
 
 public class RomanNumeralToInt {
     public int convertStringToInt(String i) {
-        if(i.equals("I")){
-            return 1;
-        }else if(i.equals("IV")){
-            return 4;
-        }else{
-            return 5;
-        }
+        return switch (i) {
+            case "I" -> 1;
+            case "IV" -> 4;
+            case "V" -> 5;
+            default -> 9;
+        };
     }
 }
