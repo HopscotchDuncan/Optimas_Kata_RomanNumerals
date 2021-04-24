@@ -90,4 +90,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralMDCLXXXVIII(){
         Assertions.assertEquals(1688,romanNumeralToInt.convertComplexRomanNumeralToInt("MDCLXXXVIII"));
     }
+
+    @Test
+    public void testMaximumNumberByOptimas(){
+        Assertions.assertEquals(3000,romanNumeralToInt.convertComplexRomanNumeralToInt("MMM"));
+    }
 }
