@@ -15,7 +15,8 @@ public class RomanNumeralToInt {
             case "C" -> 100;
             case "CD" -> 400;
             case "D" -> 500;
-            default -> 900;
+            case "CM" -> 900;
+            default -> 1000;
         };
     }
 }
