@@ -35,4 +35,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralXL(){
         Assertions.assertEquals(40,romanNumeralToInt.convertStringToInt("XL"));
     }
+
+    @Test
+    public void testRomanNumeralL(){
+        Assertions.assertEquals(50,romanNumeralToInt.convertStringToInt("L"));
+    }
 }
