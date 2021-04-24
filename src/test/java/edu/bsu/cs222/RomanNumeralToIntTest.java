@@ -15,4 +15,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralIV(){
         Assertions.assertEquals(4,romanNumeralToInt.convertStringToInt("IV"));
     }
+
+    @Test
+    public void testRomanNumeralV(){
+        Assertions.assertEquals(5,romanNumeralToInt.convertStringToInt("V"));
+    }
 }
