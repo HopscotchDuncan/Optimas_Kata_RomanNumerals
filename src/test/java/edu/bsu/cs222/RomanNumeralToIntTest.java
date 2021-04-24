@@ -60,4 +60,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralD(){
         Assertions.assertEquals(500,romanNumeralToInt.convertStringToInt("D"));
     }
+
+    @Test
+    public void testRomanNumeralCM(){
+        Assertions.assertEquals(900,romanNumeralToInt.convertStringToInt("CM"));
+    }
 }
