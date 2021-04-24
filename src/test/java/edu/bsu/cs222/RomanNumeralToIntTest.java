@@ -75,4 +75,9 @@ public class RomanNumeralToIntTest {
     public void testRandomString(){
         Assertions.assertEquals(0,romanNumeralToInt.convertStringToInt("OPTIMAS"));
     }
+
+    @Test
+    public void testRomanNumeralXLI(){
+        Assertions.assertEquals(41,romanNumeralToInt.convertStringToInt("XLI"));
+    }
 }
