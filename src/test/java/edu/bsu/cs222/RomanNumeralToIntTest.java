@@ -70,4 +70,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralM(){
         Assertions.assertEquals(1000,romanNumeralToInt.convertStringToInt("M"));
     }
+
+    @Test
+    public void testRandomString(){
+        Assertions.assertEquals(0,romanNumeralToInt.convertStringToInt("OPTIMAS"));
+    }
 }
