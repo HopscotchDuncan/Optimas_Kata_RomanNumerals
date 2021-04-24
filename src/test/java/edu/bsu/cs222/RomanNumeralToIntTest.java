@@ -80,4 +80,9 @@ public class RomanNumeralToIntTest {
     public void testRomanNumeralXLI(){
         Assertions.assertEquals(41,romanNumeralToInt.convertComplexRomanNumeralToInt("XLI"));
     }
+
+    @Test
+    public void testRandomStringWithNewMethod(){
+        Assertions.assertEquals(0,romanNumeralToInt.convertComplexRomanNumeralToInt("OPTIMAS"));
+    }
 }
