@@ -2,7 +2,19 @@ package edu.bsu.cs222;
 
 public class RomanNumeralToInt {
 
-    public int convertStringToInt(String i) {
+    public int convertRomanNumeralToInt(String i) {
+        if(i.length()<1){
+            return 0;
+        }else if(i.length()>=2 && getValueOfCharacters(i.substring(0,2))!=0){
+            return getValueOfCharacters(i.substring(0,2)) + convertRomanNumeralToInt(i.substring(2));
+        }else if (getValueOfCharacters(i.substring(0,1))!=0){
+            return getValueOfCharacters(i.substring(0,1)) + convertRomanNumeralToInt(i.substring(1));
+        }else{
+            throw new IllegalArgumentException();
+        }
+    }
+
+    public int getValueOfCharacters(String i) {
         return switch (i) {
             case "I" -> 1;
             case "IV" -> 4;
@@ -19,17 +31,5 @@ public class RomanNumeralToInt {
             case "M" -> 1000;
             default -> 0;
         };
-    }
-
-    public int convertComplexRomanNumeralToInt(String i) {
-        if(i.length()<1){
-            return 0;
-        }else if(i.length()>=2 && convertStringToInt(i.substring(0,2))!=0){
-            return convertStringToInt(i.substring(0,2)) + convertComplexRomanNumeralToInt(i.substring(2));
-        }else if (convertStringToInt(i.substring(0,1))!=0){
-            return convertStringToInt(i.substring(0,1)) + convertComplexRomanNumeralToInt(i.substring(1));
-        }else{
-            return 0;
-        }
     }
 }
