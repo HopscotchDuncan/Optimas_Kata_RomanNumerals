@@ -24,14 +24,7 @@ public class RomanNumeralToIntTest {
             "400, CD",
             "500, D",
             "900, CM",
-            "1000, M"
-    })
-    void testGetValueOfCharacters(int number,String romanNumeral) {
-        assertEquals(number,romanNumeralToInt.getValueOfCharacters(romanNumeral));
-    }
-
-    @ParameterizedTest
-    @CsvSource({
+            "1000, M",
             "41, XLI",
             "1688, MDCLXXXVIII",
             "3000, MMM",
